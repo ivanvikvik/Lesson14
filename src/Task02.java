@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
 public class Task02 {
-    public static void main(String[] args) {
+
+    public static int inputPositiveNumber(){
         Scanner scanner = new Scanner(System.in);
         int number;
 
@@ -12,5 +13,11 @@ public class Task02 {
                 break;
             }
         }
+        return number;
+    }
+
+    public static void main(String[] args) {
+        int number = inputPositiveNumber();
+        System.out.println(number);
     }
 }
