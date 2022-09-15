@@ -1,16 +1,16 @@
 public class Task06 {
 
     public static String getPythagorasTable(int dimension){
-        String msg = "";
+        StringBuilder msg = new StringBuilder();
 
         for (int j = 1; j <= dimension; j++) {
             for (int i = 1; i <= dimension; i++) {
-                msg += i * j + "\t";
+                msg.append(i * j).append("\t");
             }
-            msg += "\n";
+            msg.append("\n");
         }
 
-        return msg;
+        return msg + "";
     }
 
     public static void main(String[] args) {
